@@ -12,22 +12,13 @@ function pokemonisate(element) {
                 // If it's the first letter of the word, make it lowercase
                 letter = letter.toLowerCase();
             }
-            else if ((index + 1) % 2 === 0) {
-                // If it's an even letter, make it uppercase
-                letter = letter.toUpperCase();
-            }
-            else if ((index + 1) % 3 === 0) {
-                // If it's letter divided by 3, make it uppercase
-                letter = letter.toUpperCase();
-            }
-            else if (index === word.length - 1) {
-                // If it's the last letter of the word, make it uppercase
+            else if ((index + 1) % 2 === 0 || (index + 1) % 3 === 0 || index === word.length - 1) {
+                // If it's letter divided by 2, 3 or last letter, make it uppercase
                 letter = letter.toUpperCase();
             }
             word[index] = letter;
         });
         // Replace the word with the new one
-        // console.log(word.join());
         inputedText[i] = word.join("");
     });
     // Add new text on website
