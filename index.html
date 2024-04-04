@@ -7,11 +7,12 @@
     </head>
     <body>
         <h1>Web text pOKeMoniSAtoR</h1>
-        <form action="pokemonisate()" method="post">
-            <label for="text">Text pOKeMoniSAtoR</label>
-            <input type="text" id="text">
-            <button type="submit">Pokemonisate</button>
-        </form>
+        <div>
+            <input type="text" id="js-text-input" placeholder="Input text to pOKeMoniSAtE">
+            <button onclick="pokemonisate(this)">pOKeMoniSAtE</button>
+        </div>
+        <div class="js-text-output">
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
