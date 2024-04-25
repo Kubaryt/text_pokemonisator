@@ -1,7 +1,14 @@
-function pokemonisate(element) {
+function pokemonisate() {
     // Get the inputed text
-    let inputedText = element.parentElement.querySelector('input').value;
+    let inputedText = document.getElementById('js-text-input').value;
     // Split the inputed text into an array of words
+    if (inputedText === "") {
+        // If there's no text, show an error message
+        document.querySelector(".js-text-output").innerHTML = `
+        <p class="error">Please input a text!</p>`;
+        document.querySelector('.input-button').classList.add('input-button-blank-text')
+        return;
+    }
     inputedText = inputedText.split(/[,. ]/);
     // Loop through each word
     inputedText.forEach((word, i) => {
@@ -23,6 +30,7 @@ function pokemonisate(element) {
     });
     // Add new text on website
     document.querySelector(".js-text-output").innerHTML = `
-    <p>Pokemonised text:</p>
+    <h2>Pokemonised text:</h2>
     <p>${inputedText.join(" ")}</p>`;
+    document.querySelector('.input-button').classList.remove('input-button-blank-text')
 }
