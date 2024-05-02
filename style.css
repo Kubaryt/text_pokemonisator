@@ -12,8 +12,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-    gap: 3svh;
+    gap: 2svh;
+    margin-top: 25svh;
+    width: 100%;
+    height: 100%;
 }
 
 .title {
@@ -22,22 +24,28 @@ body {
     font-weight: 600;
     border-bottom: 0.2svw solid #afbac5;
     padding-bottom: 2svh;
-    width: 41%;
+    width: 70%;
 }
 
 .input-container {
     display: flex;
     justify-content: center;
     gap: 1svw;
-    width: 40%;
+    width: 55%;
 }
 
 .input-text {
     flex-grow: 7;
     padding: 1svh;
-    border: #afbac5 0.1svw solid;
+    border-bottom: #afbac5 0.1svw solid;
     border-radius: 10px;
+    box-shadow: 0 4px 5px #bcc3c9;
 }
+
+.input-text:focus {
+    outline: none;
+}
+
 
 .input-text::placeholder {
     opacity: 75%;
@@ -69,7 +77,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 50%;
 }
 
 .output-container > h2 {
