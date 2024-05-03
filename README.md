@@ -16,5 +16,4 @@ My concept is simple design with:
 
 ## 📈Project state
 
-Website design is pretty much done.\
-I have to enhance conversion logic.
+Project is finished, though if you have any ideas for improvements or you found any bugs, feel free to share them.
