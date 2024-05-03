@@ -23,7 +23,7 @@ body {
     font-size: 4rem;
     font-weight: 600;
     border-bottom: 0.2svw solid #afbac5;
-    padding-bottom: 2svh;
+    padding-bottom: 2svw;
     width: 70%;
 }
 
@@ -56,7 +56,7 @@ body {
     flex-grow: 1;
     border: #afbac5 0.1svw solid;
     border-radius: 10px;
-    padding: 1svh 0.5svh;
+    padding: 1svw 0.5svw;
 }
 
 .input-button:hover {
@@ -77,12 +77,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 55%;
+    margin-left: 2svw;
 }
 
 .output-container > h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    padding: 1svh;
+    padding: 1svw;
 }
