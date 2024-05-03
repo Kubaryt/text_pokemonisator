@@ -7,6 +7,30 @@
     background-color: #0d1017;
 }
 
+@media only screen and (min-width: 426px) {
+    .title {
+        font-size: 4rem;
+    }
+    .input-container {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .title {
+        font-size: 6rem;
+    }
+    .input-container {
+        width: 70%;
+    }
+    .input-text {
+        font-size: 1.5rem;
+    }
+    .input-button {
+        font-size: 1.5rem;
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -20,7 +44,6 @@ body {
 
 .title {
     text-align: center;
-    font-size: 4rem;
     font-weight: 600;
     border-bottom: 0.2svw solid #afbac5;
     padding-bottom: 2svw;
@@ -31,7 +54,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 1svw;
-    width: 55%;
 }
 
 .input-text {
