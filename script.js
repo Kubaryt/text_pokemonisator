@@ -16,12 +16,26 @@ function pokemonisate() {
         word = word.split("");
         word.forEach((letter, index) => {
             if (index === 0) {
-                // If it's the first letter of the word, make it lowercase
-                letter = letter.toLowerCase();
+                // If it's the first letter of the word, make it lower or uppercase 50/50
+                if (Math.random() > 0.5) {
+                    letter = letter.toLowerCase();
+                }
+                else {
+                    letter = letter.toUpperCase();
+                }
             }
-            else if ((index + 1) % 2 === 0 || (index + 1) % 3 === 0 || index === word.length - 1) {
-                // If it's letter divided by 2, 3 or last letter, make it uppercase
+            else if ((index + 1) % 2 === 0 || (index + 1) % 5 === 0) {
+                // If it's letter divided by 2, 5 make it uppercase
                 letter = letter.toUpperCase();
+            }
+            else if (index === word.length - 1) {
+                // If it's last letter of the word, make it lower or uppercase 50/50
+                if (Math.random() > 0.5) {
+                    letter = letter.toLowerCase();
+                }
+                else {
+                    letter = letter.toUpperCase();
+                }
             }
             word[index] = letter;
         });
