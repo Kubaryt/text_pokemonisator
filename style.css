@@ -74,33 +74,13 @@ body {
     color: #afbac5;
 }
 
-.input-button {
-    flex-grow: 1;
-    border: #afbac5 0.1svw solid;
-    border-radius: 10px;
-    padding: 1svw 0.5svw;
-}
-
-.input-button:hover {
-    background-color: #afbac5;
-    color: #0d1017;
-}
-
-.input-button-blank-text {
-    background-color: #ed4321;
-    color: #0d1017;
-}
-
-.input-button-blank-text:hover {
-    background-color: #d98473;
-}
-
 .output-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 55%;
     margin-left: 1svw;
+    overflow-wrap: break-word;
 }
 
 .output-container > h2 {

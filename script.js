@@ -1,18 +1,11 @@
-function pokemonisate() {
-    const inputedText = getInputElementValue();
+function pokemonisate(inputElement) {
+    const inputedText = getInputElementValue(inputElement);
     const outputText = convertText(inputedText);
     showOutputText(outputText);
 }
 
-function getInputElementValue() {
-    let inputedText = document.getElementById('js-text-input').value;
-    if (inputedText === "") {
-        // If there's no text, show an error message
-        document.querySelector(".js-text-output").innerHTML = `
-        <p class="error">Please input a text!</p>`;
-        document.querySelector('.input-button').classList.add('input-button-blank-text')
-        return;
-    }
+function getInputElementValue(inputElement) {
+    let inputedText = inputElement.value;
     inputedText = inputedText.split(/[,. ]/);
     return inputedText
 }
@@ -43,5 +36,4 @@ function showOutputText(textString) {
     document.querySelector(".js-text-output").innerHTML = `
     <h2>Pokemonised text:</h2>
     <p>${textString.join(" ")}</p>`;
-    document.querySelector('.input-button').classList.remove('input-button-blank-text')
 }
