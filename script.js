@@ -21,7 +21,7 @@ function convertText(textString) {
     textString.forEach((word, i) => {
         word = word.split("");
         word.forEach((letter, index) => {
-            if (index === 0 || index === word.length - 1)) {
+            if (index === 0 || index === word.length - 1) {
                 // If it's the first or last letter of the word, make it lower or uppercase 50/50
                 if (Math.random() > 0.5) {
                     letter = letter.toLowerCase();
