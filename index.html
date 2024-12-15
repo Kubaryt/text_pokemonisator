@@ -3,16 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <title>Web text pOKeMoniSAtoR</title>
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script/theme_change.js"></script>
     </head>
-    <body>
-        <h1 class="title">Web text pOKeMoniSAtoR</h1>
-        <div class="input-container">
-            <input class="input-text" type="text" id="js-text-input" placeholder="Input text to pOKeMoniSAtE"
+    <body class="flex flex-col w-screen justify-center text-[#afbac5] bg-black">
+        <header class="bg-gray-900 w-full sm:h-[7vh] h-[10vh] border-b-2 border-b-gray-700 flex items-center justify-between p-5 text-md gap-5">
+            <p class="text-lg">Text pOKeMoniSAtoR</p>
+            <div class="flex gap-5">
+                <a href="what_does_it_do.html">
+                    <p class="text-[#afbac5] hover:underline">What does it do?</p>
+
+                </a>
+                <a href="index.html">
+                    <p class="text-[#afbac5] hover:underline">Pokemonisator</p>
+                </a>
+            </div>
+        </header>
+        <main class="flex flex-col w-screen justify-center items-center min-h-[83vh] sm:min-h-[86vh] h-auto">
+            <h1 class="font-600 border-b-2 border-b-[#afbac5] pb-5 sm:text-4xl text-3xl w-[55vw] text-center">Text pOKeMoniSAtoR</h1>
+            <input class="mt-5 w-[45vw] bg-black border-b-[#afbac5] border-b-[1px] rounded-xl p-2 text-md outline-none shadow-md shadow-[#bcc3c9]" type="text" id="js-text-input" placeholder="Input text to pOKeMoniSAtE"
                    autocomplete="off" oninput="pokemonisate(this)">
-        </div>
-        <div class="js-text-output output-container">
-        </div>
-        <script src="script.js"></script>
+            <div class="js-text-output mt-10 w-[45vw] text-lg text-wrap">
+                <p>Pokemonised text:</p>
+                <p class="invisible">S</p>
+            </div>
+        </main>
+        <footer class="bg-gray-900 w-full h-[7vh] border-t-2 border-t-gray-700 flex items-center justify-center gap-5">
+            <p class="text-[#afbac5]">© 2024 Web text pOKeMoniSAtoR</p>
+            <a href="https://github.com/Kubaryt">
+                <p class="text-[#afbac5]">Created by Jakub Starzyk</p>
+            </a>
+        </footer>
+    <script src="script/pokemonisate.js"></script>
     </body>
 </html>

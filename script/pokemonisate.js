@@ -35,5 +35,10 @@ function convertText(textString) {
 function showOutputText(textString) {
     document.querySelector(".js-text-output").innerHTML = `
     <h2>Pokemonised text:</h2>
-    <p>${textString.join(" ")}</p>`;
+    <p class="text-wrap max-w-[45vw] overflow-auto">${textString.join(" ")}</p>`
+    if (textString[0] === '' && textString.length === 1) {
+        document.querySelector(".js-text-output").innerHTML = `
+        <h2>Pokemonised text:</h2>
+        <p class="invisible">No text to display</p>`
+    }
 }
